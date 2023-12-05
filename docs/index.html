@@ -3,21 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>...</title>
+  <title>Home</title>
   <style>
-    :root,html { color-scheme: light dark; }
-    html,body{
+    :root,html,body{
+      color-scheme: light dark;
       margin:0;
       padding:0;
+      width: 100%;
+      height: 100%;
     }
-    body{
+    .app {
+      width: 100%;
+      height:100%;
+      overflow: auto;
       display:flex;
       flex-flow:row wrap;
       justify-content:center;
     }
+    .reg-log{
+      width: 100%;
+      max-width: 500px;
+      background-color: #777;
+      padding: 10px;
+      margin-block: auto;
+      margin-inline: auto;
+      text-align: center;
+    }
+    input[type=text] {
+      width: 95%;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    button {
+      width: 80px;
+      height: 35px;
+    }
   </style>
 </head>
 <body>
-  <h1>welcome</h1>
+  <div class="app">
+    <div class="reg-log">
+      <input type="text">
+      <input type="text">
+      <button>Save</button>
+    </div>
+  </div>
+  <script>
+    "use strict";
+    
+  </script>
 </body>
 </html>
